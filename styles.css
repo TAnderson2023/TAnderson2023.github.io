@@ -3,6 +3,9 @@ body {
     background-color: #afafaf;
     font-family: Arial, Helvetica, sans-serif;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -48,3 +51,7 @@ body {
     color: black !important;
 }
 
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
