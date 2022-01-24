@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: #afafaf;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 body::-webkit-scrollbar{
     display: none;
@@ -16,6 +16,7 @@ body::-webkit-scrollbar{
 
 .nav-wrapper .left-side {
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-wrapper > .left-side > div{
@@ -49,6 +50,23 @@ body::-webkit-scrollbar{
 
 .active-nav-link a{
     color: black !important;
+}
+.right-side a {
+    text-decoration: none;
+}
+
+.right-side .brand{
+    display: flex;
+}
+
+.right-side > .brand > .name {
+    padding-left: 4px;
+    border-left: 1px solid #afafaf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-side > .brand > .icons-wrapper{
+    padding-right: 4px;
 }
 
 .content-wrapper {
