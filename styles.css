@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    background-color: #afafaf;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #5f0a0a;
+}
+
+.nav-wrapper .left-side {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-wrapper > .left-side > div{
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #efefef;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+.right-side a {
+    text-decoration: none;
+}
+
+.right-side .brand{
+    display: flex;
+}
+
+.right-side > .brand > .name {
+    padding-left: 4px;
+    border-left: 1px solid #afafaf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-side > .brand > .icons-wrapper{
+    padding-right: 4px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content-wrapper {
+    display: block;
+}
+
+.description-wrapper{
+    margin: auto;
+    padding-bottom: 50px;
+    width: 1000px;
+}
+.description-wrapper h1 {
+    padding-left: 100px;
+    font-family: 'Space Mono', monospace;
+}
+
+.description-wrapper p {
+    padding-left: 125px;
+    padding-right: 125px;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.2em
+}
+
+.portfolio {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    width: 1000px;
+    height: 1000px;
+}
+.project-wrapper {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 30px;
+    text-align: center;
+    height: 300px;
+}
+.project-wrapper > a{
+    width: 256px;
+    height: 256px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-wrapper > a > img{
+    width: inherit;
+    height: inherit;
+}
